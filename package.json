@@ -1,0 +1,17 @@
+{
+  "name": "discord-bot-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bytesmc",
+  "license": "ISC",
+  "dependencies": {
+    "bufferutil": "^4.0.6",
+    "discord.js": "^13.8.1",
+    "erlpack": "^0.1.4",
+    "utf-8-validate": "^5.0.9"
+  }
+}
