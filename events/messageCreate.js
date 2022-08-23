@@ -6,6 +6,7 @@ module.exports = async (bot, message) => {
 
     let guild = Guilds.get(message.guild.id);
     if (!guild) return;
+    if (!guild.prefix || guild.prefix.length == 0) return;
 
     if (message.content.match(new RegExp(`^<@!?${bot.user.id}>`))) return message.reply(`Hey ${message.member}! For a list of commands please use \`${guild.prefix}help\`. Feel free to create a support ticket for additional support.`).catch(console.error);
     if (!message.content.toLowerCase().startsWith(guild.prefix.toLowerCase())) return;
